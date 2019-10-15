@@ -1,0 +1,281 @@
+// @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body,
+html{
+	overflow-x: hidden;
+}
+// Menu
+nav{
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+	background: #ffffff;
+	& > .container{
+		padding: 9.5px 46px;
+
+		& > .row{
+			justify-content: space-between;
+
+			.gasBrand{
+				max-width: 63.76px;
+				max-height: 60.99px;
+			}
+
+			.menu-btns{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				&  a.btn{
+					padding: 10px 33px;
+					color: #005F98;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					display: block;
+					border-radius: 21px;
+					background: white;
+					transition: .25s;
+					margin: 0 3px;
+
+					& > svg{
+						display: none;
+					}
+
+					&:hover,
+					&.active{
+						background: #046CBB;
+						color: white;
+					}
+				}
+			}
+			
+			.col-lg + .col{
+				text-align: right;
+
+				label{
+					cursor: pointer;
+					opacity: .35;
+					transition: .25s;
+					// for safair #/...#
+					input{
+						width: 0;
+						height: 0;
+						overflow: hidden;
+					}
+
+					&:hover{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Information Section for sale 
+#infoSale{
+	margin: 48px auto 36px;
+
+	& > .container{
+		padding: 0 40px;
+
+		& > .row{
+			justify-content: space-between;
+
+			.col{
+				.box-sale{
+					max-width: 170px;
+					padding: 14px 25px;
+					background: #85B4D5;
+					border-radius: 4px;
+					margin-right: 39px;
+
+
+
+					h2,
+					p{
+						font-style: normal;
+						font-weight: 500;
+						font-size: 18px;
+						letter-spacing: 0.01em;
+						color: #FFFFFF;
+					}
+
+					p{
+						font-family: 'Poppins', sans-serif;
+						font-style: normal;
+						font-weight: normal;
+						padding-top: 12px;
+					}
+				}
+
+				&:last-child .box-sale{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+// Digrames
+#digrames{
+	& > .container{
+		padding:0 40px;
+		& > .row{
+			justify-content: space-between;
+			margin: 46px 0;
+
+			.saleTeam{
+				width: 585px;
+				background: #FFFFFF;
+				box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+				border-radius: 4px;
+				
+				h3,
+				h3 > a{
+					font-family: 'Poppins', sans-serif;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					letter-spacing: 0.01em;
+					color: #192A3E;
+					padding: 16px 7px;
+				}
+
+				.convas-container{
+					padding: 21px 7px 26px;
+					position: relative;
+					text-align: center;
+
+					&.dateGS{
+						padding:21px 7px 5.5px; 
+					}
+
+					& > div{
+						height: 344px;
+					}
+					.dateNowGS{
+						font-family: 'Poppins', sans-serif;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 11px;
+						letter-spacing: 0.01em;
+						color: #4C5862;
+					}
+				}
+			}
+		}
+	}
+}
+
+.canvasjs-chart-credit{
+	display: none;
+}
+
+
+// media
+@media (max-width: 1200px) {
+	nav{
+		box-shadow: 0 0;
+		& > .container{
+			& > .row{
+				justify-content: space-between;
+
+				.menu-btns{
+					flex-direction: column;
+					width: 100%;
+					li{
+						margin: 5px 0 !important;
+
+						&:first-child {
+							order: 1;
+						}
+						&:nth-child(2){
+							order: 2;
+						}
+						&:last-child{
+							order: 3;
+						}
+					}
+					&  a.btn{
+						font-size: 16px;
+						// display: flex !important;
+						// flex-direction: row;
+						// justify-content: space-between;
+						// align-items: center;
+						margin: 0 !important;
+						position: relative;
+
+						&:hover{
+							background: #046CBB;
+							color: white;
+						}
+						&.active{
+							background: white !important;
+							color: #005F98 !important;
+							box-shadow: 0px 1px 10px rgba(21, 21, 21, 0.15) !important;
+							order: 1;
+							& > svg{
+								display: inline-block;
+								position: absolute;
+								right: 33px;
+								top: 15px;
+							}
+						}
+					}
+				}
+				.col-lg{
+					width: 60%;
+				}
+			}
+		}
+	}
+
+	#digrames{
+		& > .container{
+			padding:0 40px;
+			& > .row{
+				justify-content: center;
+				flex-direction: column;
+				margin: 0;
+
+				.saleTeam{
+					margin: 20.68px 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	nav{
+		& > .container{
+			padding: 7.8px 14.33px;
+			& > .row{
+				justify-content: space-between;
+				.col-lg{
+					width: 50%;
+				}
+			}
+		}
+	}
+
+	#digrames{
+		& > .container{
+			padding:0 14.33px;
+			& > .row{
+				justify-content: center;
+				flex-direction: column;
+				margin: 0;
+				
+				.col{
+					width: 100%;
+				}
+				.saleTeam{
+					margin: 20.68px auto;
+					width: 100%;
+					max-width: 585px;
+				}
+			}
+		}
+	}
+}
