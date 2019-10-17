@@ -1,0 +1,114 @@
+body {
+  background: #E5E5E5; }
+
+#loginGasP {
+  background: #E5E5E5;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #loginGasP > .login-container {
+    max-width: 589.54px;
+    background: white;
+    padding: 42px 60px 46px; }
+    #loginGasP > .login-container > .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #loginGasP > .login-container > .row .col {
+        width: 100%;
+        text-align: center; }
+      #loginGasP > .login-container > .row .brandLogin {
+        max-width: 279.61px;
+        max-height: 183.66px;
+        width: 100%; }
+      #loginGasP > .login-container > .row .emailGS-col {
+        margin-top: 32.12px; }
+      #loginGasP > .login-container > .row .passGS-col {
+        margin-top: 45px; }
+      #loginGasP > .login-container > .row form {
+        width: 100%;
+        text-align: left; }
+        #loginGasP > .login-container > .row form label {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          border-bottom: 1px solid #000000;
+          padding: 6px 0;
+          max-width: 415.24px;
+          width: 100%;
+          margin: auto; }
+          #loginGasP > .login-container > .row form label > input {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color: #000000; }
+            #loginGasP > .login-container > .row form label > input:focus::-webkit-input-placeholder {
+              color: transparent; }
+            #loginGasP > .login-container > .row form label > input:focus:-ms-input-placeholder {
+              color: transparent; }
+            #loginGasP > .login-container > .row form label > input:focus::-ms-input-placeholder {
+              color: transparent; }
+            #loginGasP > .login-container > .row form label > input:focus::placeholder {
+              color: transparent; }
+          #loginGasP > .login-container > .row form label > img {
+            margin-right: 7px; }
+        #loginGasP > .login-container > .row form .invalidInfo {
+          display: none;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          color: red;
+          margin-top: 5px; }
+        #loginGasP > .login-container > .row form .btn-success {
+          width: 128.72px;
+          height: 42px;
+          background: #046CBB;
+          border-radius: 21px;
+          font-family: Rubik;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          color: #FFFFFF;
+          padding: 9px 40px;
+          margin: 70px auto 0;
+          display: block; }
+
+@media (max-width: 1200px) {
+  #loginGasP {
+    background: white;
+    min-height: 100vh; }
+    #loginGasP > .login-container {
+      max-width: 589.54px;
+      background: white;
+      padding: 42px 20px 46px;
+      margin: auto; } }
+
+@media (max-width: 500px) {
+  #loginGasP > .login-container {
+    padding: 42px 10px 46px;
+    margin: auto;
+    width: 100%; } }

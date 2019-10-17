@@ -29,10 +29,10 @@
   align-items: center; }
 
 .btn {
-  background: transparent -webkit-gradient(linear, left top, left bottom, from(0));
-  background: transparent -webkit-linear-gradient(0);
-  background: transparent -o-linear-gradient(0);
-  background: transparent linear-gradient(0);
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(transparent));
+  background: transparent -webkit-linear-gradient(transparent);
+  background: transparent -o-linear-gradient(transparent);
+  background: transparent linear-gradient(transparent);
   cursor: pointer; }
 
 .d-none {

@@ -5,16 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Gaspropan</title>
+	<title>ԳԱԶ ՊՐՈՊԱՆ</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/all.css">	
     <link rel="stylesheet" href="css/index.css">
+<!--
+<pre> 
+	    |===============
+	    ||===========
+	    |||=======
+	    |||
+	    |||
+===================
+   ============= 
+      =======
+	    |||
+	    |||
+	    |||=======
+	    ||===========
+	    |===============   
+</pre> -->
 </head>
-<body style="text-align: center;">
+<body>
 	
-	<h1>Hello Stranger</h1>
-	<h2>Login Page Coming Soon</h2>
+	<section id="loginGasP">
+		<div class="login-container">
+			<div class="row">
+				<div class="col">
+					<img src="img/loginLogo.svg" alt="" class="brandLogin">
+				</div>
+				<div class="col">
+					<form action="main.html" id="loginIndex">
+						<div>
+							<label class="emailGS-col" for="emailGS">
+								<img src="img/mail.svg" alt="">
+								<input id="emailGS" name="email" type="email" placeholder="Էլեկտրոնային հասցե" >
+							</label>
+							<div class="invalidInfo">*Սխալ մուտքագրում</div>
+						</div>
+						<div>
+							<label class="passGS-col" for="passGS">
+								<img src="img/pass.svg" alt="">
+								<input id="passGS" name="password"  type="password" placeholder="Գաղտնաբառ" >
+							</label>
+							<div class="invalidInfo">*Սխալ մուտքագրում</div>
+						</div>
+						<div>
+							<input type="submit" value="Մուտք" class="btn btn-success">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 	
 	<!-- Optional JavaScript -->
 	<script src="js/jquery-3.4.1.min.js"></script>

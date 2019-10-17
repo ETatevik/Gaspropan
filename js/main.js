@@ -64,27 +64,21 @@ var LastDaySales_value = [
 var colors = ["#E03141","#FFB946","#2ED47A","#008CA9","#7163CA","#615B51","#A2E96A","#DF5E5E","#4C5862"];
 
 window.onload = function () {
-	// Now Year in first digrames
+	// Now Year in first digrames--------------------------------------------
 	jQuery('.dateNowGS').text(new Date().getFullYear());
 
 
 	// menu dropdown when window small 1200px-------------------------------------------------
-	// if ($(window).width() < 1200) {
-	// 	$('.menu-btns  a').on('click', function(event) {
- //            event.preventDefault();
-            
- //            if (!$(this).hasClass('active')) {
- //                $('.menu-btns a.active').css('order', $(this).css('order'));
- //                $(this).css('order', 1);
- //                $('.menu-btns a').removeClass('active');
- //                $(this).addClass('active');
- //                $('.menu-btns a').not(this).fadeOut(200); 
- //            }else{
- //                $('.menu-btns a').not(this).fadeToggle(200); 
- //            }
- //        });
-	// }
-
+	if ($(window).width() < 1200) {
+		$('.menu-btns a').not('.menu-btns a.active').parent('li').slideUp(0);
+		$('.menu-btns a.active').parent('li').css('display', 'block');
+	}
+	$('.menu-btns .active').on('click', function(event) {
+		if ($(window).width() < 1200) {
+	        event.preventDefault();
+	        $('.menu-btns li').not($(this).parent('li')).slideToggle(200); 
+		}
+    });
 
 	// Digrames --------------------------------------------------------
 	// lastDaySales

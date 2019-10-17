@@ -1,9 +1,9 @@
 // @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-body,
-html{
-	overflow-x: hidden;
-}
+// body,
+// html{
+// 	overflow-x: hidden;
+// }
 // Menu
 nav{
 	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
@@ -51,16 +51,11 @@ nav{
 			.col-lg + .col{
 				text-align: right;
 
-				label{
+				div.logout > button{
+					background: rgba(255,255,255,0) linear-gradient(rgba(255,255,255,0)) !important;
 					cursor: pointer;
 					opacity: .35;
 					transition: .25s;
-					// for safair #/...#
-					input{
-						width: 0;
-						height: 0;
-						overflow: hidden;
-					}
 
 					&:hover{
 						opacity: 1;
@@ -77,13 +72,18 @@ nav{
 
 	& > .container{
 		padding: 0 40px;
+		overflow-x: hidden;
 
-		& > .row{
-			justify-content: space-between;
 
+
+		& > .toucheSlider{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			width: 2000px;
 			.col{
+
 				.box-sale{
-					max-width: 170px;
 					padding: 14px 25px;
 					background: #85B4D5;
 					border-radius: 4px;
@@ -108,9 +108,9 @@ nav{
 					}
 				}
 
-				&:last-child .box-sale{
-					margin-right: 0;
-				}
+				// &:last-child .box-sale{
+				// 	margin-right: 0;
+				// }
 			}
 		}
 	}
@@ -185,25 +185,15 @@ nav{
 					width: 100%;
 					li{
 						margin: 5px 0 !important;
-
-						&:first-child {
-							order: 1;
-						}
-						&:nth-child(2){
-							order: 2;
-						}
-						&:last-child{
-							order: 3;
-						}
+						display: none;
 					}
 					&  a.btn{
 						font-size: 16px;
-						// display: flex !important;
-						// flex-direction: row;
-						// justify-content: space-between;
-						// align-items: center;
+						display: flex !important;
+						flex-direction: row;
+						justify-content: space-between;
+						align-items: center;
 						margin: 0 !important;
-						position: relative;
 
 						&:hover{
 							background: #046CBB;
@@ -213,12 +203,8 @@ nav{
 							background: white !important;
 							color: #005F98 !important;
 							box-shadow: 0px 1px 10px rgba(21, 21, 21, 0.15) !important;
-							order: 1;
 							& > svg{
-								display: inline-block;
-								position: absolute;
-								right: 33px;
-								top: 15px;
+								display: block;
 							}
 						}
 					}
