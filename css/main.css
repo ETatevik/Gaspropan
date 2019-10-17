@@ -37,9 +37,12 @@ nav {
           margin: 0 3px; }
           nav > .container > .row .menu-btns a.btn > svg {
             display: none; }
-          nav > .container > .row .menu-btns a.btn:hover, nav > .container > .row .menu-btns a.btn.active {
+          nav > .container > .row .menu-btns a.btn:hover {
             background: #046CBB;
             color: white; }
+        nav > .container > .row .menu-btns li.active > a {
+          background: #046CBB;
+          color: white; }
       nav > .container > .row .col-lg + .col {
         text-align: right; }
         nav > .container > .row .col-lg + .col div.logout > button {
@@ -58,32 +61,23 @@ nav {
 #infoSale {
   margin: 48px auto 36px; }
   #infoSale > .container {
-    padding: 0 40px;
-    overflow-x: hidden; }
-    #infoSale > .container > .toucheSlider {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      width: 2000px; }
-      #infoSale > .container > .toucheSlider .col .box-sale {
+    padding: 0 40px; }
+    #infoSale > .container > .saleSliderMain {
+      width: 100%;
+      margin: auto; }
+      #infoSale > .container > .saleSliderMain .box-sale {
         padding: 14px 25px;
         background: #85B4D5;
         border-radius: 4px;
         margin-right: 39px; }
-        #infoSale > .container > .toucheSlider .col .box-sale h2,
-        #infoSale > .container > .toucheSlider .col .box-sale p {
+        #infoSale > .container > .saleSliderMain .box-sale h2,
+        #infoSale > .container > .saleSliderMain .box-sale p {
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
           letter-spacing: 0.01em;
           color: #FFFFFF; }
-        #infoSale > .container > .toucheSlider .col .box-sale p {
+        #infoSale > .container > .saleSliderMain .box-sale p {
           font-family: 'Poppins', sans-serif;
           font-style: normal;
           font-weight: normal;
@@ -147,6 +141,15 @@ nav {
         nav > .container > .row .menu-btns li {
           margin: 5px 0 !important;
           display: none; }
+          nav > .container > .row .menu-btns li.active {
+            display: block !important; }
+            nav > .container > .row .menu-btns li.active > a {
+              background: white !important;
+              color: #005F98 !important;
+              -webkit-box-shadow: 0px 1px 10px rgba(21, 21, 21, 0.15) !important;
+              box-shadow: 0px 1px 10px rgba(21, 21, 21, 0.15) !important; }
+              nav > .container > .row .menu-btns li.active > a > svg {
+                display: block; }
         nav > .container > .row .menu-btns a.btn {
           font-size: 16px;
           display: -webkit-box !important;
@@ -166,13 +169,6 @@ nav {
           nav > .container > .row .menu-btns a.btn:hover {
             background: #046CBB;
             color: white; }
-          nav > .container > .row .menu-btns a.btn.active {
-            background: white !important;
-            color: #005F98 !important;
-            -webkit-box-shadow: 0px 1px 10px rgba(21, 21, 21, 0.15) !important;
-            box-shadow: 0px 1px 10px rgba(21, 21, 21, 0.15) !important; }
-            nav > .container > .row .menu-btns a.btn.active > svg {
-              display: block; }
       nav > .container > .row .col-lg {
         width: 60%; }
   #digrames > .container {

@@ -69,17 +69,37 @@ window.onload = function () {
 
 
 	// menu dropdown when window small 1200px-------------------------------------------------
-	if ($(window).width() < 1200) {
-		$('.menu-btns a').not('.menu-btns a.active').parent('li').slideUp(0);
-		$('.menu-btns a.active').parent('li').css('display', 'block');
-	}
+	// if ($(window).width() < 1200) {
+	// 	$('.menu-btns li').not('.menu-btns li.active').slideUp(0);
+	// 	$('.menu-btns li.active').css('display', 'block');
+	// }
 	$('.menu-btns .active').on('click', function(event) {
 		if ($(window).width() < 1200) {
 	        event.preventDefault();
-	        $('.menu-btns li').not($(this).parent('li')).slideToggle(200); 
+	        $('.menu-btns li').not(this).slideToggle(200); 
 		}
     });
 
+    // LogOut-----------------------------------------
+    {
+    	$('#logout').click(function(event) {
+    		location.href = "index.html";
+    	});
+    }
+
+
+    // Touch slider Sale diskr----------------------------------
+    {
+    	jQuery("#content-slider").lightSlider({
+             loop:true,
+             keyPress:true,
+             item: 4,
+             pager: false,
+             controls: false,
+             slideMargin: 5,
+             autoWidth: true
+         });
+    }
 	// Digrames --------------------------------------------------------
 	// lastDaySales
 	{

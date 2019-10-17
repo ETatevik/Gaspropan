@@ -40,11 +40,15 @@ nav{
 						display: none;
 					}
 
-					&:hover,
-					&.active{
+					&:hover{
 						background: #046CBB;
 						color: white;
 					}
+				}
+
+				li.active>a{
+					background: #046CBB;
+					color: white;
 				}
 			}
 			
@@ -72,45 +76,33 @@ nav{
 
 	& > .container{
 		padding: 0 40px;
-		overflow-x: hidden;
+
+		& > .saleSliderMain{
+			width: 100%;
+            margin: auto;
+			.box-sale{
+				padding: 14px 25px;
+				background: #85B4D5;
+				border-radius: 4px;
+				margin-right: 39px;
 
 
 
-		& > .toucheSlider{
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			width: 2000px;
-			.col{
-
-				.box-sale{
-					padding: 14px 25px;
-					background: #85B4D5;
-					border-radius: 4px;
-					margin-right: 39px;
-
-
-
-					h2,
-					p{
-						font-style: normal;
-						font-weight: 500;
-						font-size: 18px;
-						letter-spacing: 0.01em;
-						color: #FFFFFF;
-					}
-
-					p{
-						font-family: 'Poppins', sans-serif;
-						font-style: normal;
-						font-weight: normal;
-						padding-top: 12px;
-					}
+				h2,
+				p{
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					letter-spacing: 0.01em;
+					color: #FFFFFF;
 				}
 
-				// &:last-child .box-sale{
-				// 	margin-right: 0;
-				// }
+				p{
+					font-family: 'Poppins', sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					padding-top: 12px;
+				}
 			}
 		}
 	}
@@ -186,6 +178,18 @@ nav{
 					li{
 						margin: 5px 0 !important;
 						display: none;
+
+						&.active{
+							display: block !important;
+							& > a{
+								background: white !important;
+								color: #005F98 !important;
+								box-shadow: 0px 1px 10px rgba(21, 21, 21, 0.15) !important;
+								& > svg{
+									display: block;
+								}
+							}
+						} 
 					}
 					&  a.btn{
 						font-size: 16px;
@@ -198,14 +202,6 @@ nav{
 						&:hover{
 							background: #046CBB;
 							color: white;
-						}
-						&.active{
-							background: white !important;
-							color: #005F98 !important;
-							box-shadow: 0px 1px 10px rgba(21, 21, 21, 0.15) !important;
-							& > svg{
-								display: block;
-							}
 						}
 					}
 				}

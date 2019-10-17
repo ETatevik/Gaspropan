@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet"  href="css/lightslider.css"/>
 	<link rel="stylesheet" href="css/main.css">
 
 <!--
@@ -42,8 +43,8 @@
 				</div>
 				<div class="col-lg">
 					<ul class="menu-btns">
-						<li>
-							<a href="#" class="btn active">Գլխավոր
+						<li class="active">
+							<a href="#" class="btn">Գլխավոր
 								<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0.337571 0.504535C0.163522 0.686208 0.0719175 0.934814 0.0719175 1.17386C0.0719175 1.4129 0.163522 1.66151 0.337571 1.84318L7.14382 8.94756C7.31787 9.12923 7.54688 9.22485 7.78506 9.22485C8.02323 9.22485 8.25224 9.12923 8.42629 8.94756L15.2325 1.84318C15.5898 1.47027 15.5898 0.877443 15.2325 0.504535C14.8753 0.131626 14.3073 0.131626 13.9501 0.504535L7.78506 6.93959L1.62004 0.504535C1.26278 0.141188 0.68567 0.141188 0.337571 0.504535Z" fill="#046CBB"/>
 								</svg>
@@ -83,44 +84,48 @@
 	<!-- Information Section for sale -->
 	<section id="infoSale">
 		<div class="container">
-			<div class="toucheSlider">
-				<div class="col">
-					<div class="box-sale">
-						<h2>Այսօր վաճառվել է</h2>
-						<p>233 000</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="box-sale">
-						<h2>Այսօր վաստակվել է</h2>
-						<p>233 000</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="box-sale">
-						<h2>Ամսվա վաճառվածը</h2>
-						<p>233 000</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="box-sale">
-						<h2>Ամսվա վաստակվածը</h2>
-						<p>233 000</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="box-sale">
-						<h2>Այս հերթափոխում վաճառվեց</h2>
-						<p>233 000</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="box-sale">
-						<h2>Այս հերթափոխում վաճառվեց</h2>
-						<p>233 000</p>
-					</div>
-				</div>
-			</div>
+			<div class="saleSliderMain">
+		        <div class="item">
+		            <ul id="content-slider" class="content-slider">
+		                <li>
+		                    <div class="box-sale">
+		                        <h2>Այսօր վաճառվել է</h2>
+		                        <p>233 000</p>
+		                    </div>
+		                </li>
+		                <li>
+		                    <div class="box-sale">
+		                        <h2>Այսօր վաստակվել է</h2>
+		                        <p>233 000</p>
+		                    </div>
+		                </li>
+		                <li>
+		                    <div class="box-sale">
+		                        <h2>Ամսվա վաճառվածը</h2>
+		                        <p>233 000</p>
+		                    </div>
+		                </li>
+		                <li>
+		                    <div class="box-sale">
+		                        <h2>Ամսվա վաստակվածը</h2>
+		                        <p>233 000</p>
+		                    </div>
+		                </li>
+		                <li>
+		                    <div class="box-sale">
+		                        <h2>Այս հերթափոխում վաճառվեց</h2>
+		                        <p>233 000</p>
+		                    </div>
+		                </li>
+		                <li>
+		                   <div class="box-sale">
+		                        <h2>Այս հերթափոխում վաճառվեց</h2>
+		                        <p>233 000</p>
+		                    </div>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>	
 		</div>
 	</section>
 
@@ -170,6 +175,10 @@
 	<!-- Optional JavaScript -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/canvasjs.min.js"></script>
+
+    <!--This for slider, 3.4.1 version not vorking for this, and this not make a mistake-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script> 
 
 	<script src="js/main.js"></script>
 </body>
