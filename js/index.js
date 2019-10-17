@@ -2,7 +2,9 @@ jQuery(document).ready(function() {
 
 	// for safari
 	{
-		$('#loginGasP').css('minHeight', $(window).height()+'px');
+		if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {  
+			$('#loginGasP').css('minHeight', $(window).height()+'px');
+		}
 	}
 
 	// submit form check all inputs

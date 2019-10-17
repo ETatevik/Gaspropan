@@ -32,12 +32,12 @@ body {
       #loginGasP > .login-container > .row .col {
         width: 100%;
         text-align: center; }
+        #loginGasP > .login-container > .row .col:last-child {
+          margin-top: 35px; }
       #loginGasP > .login-container > .row .brandLogin {
         max-width: 279.61px;
         max-height: 183.66px;
         width: 100%; }
-      #loginGasP > .login-container > .row .emailGS-col {
-        margin-top: 32.12px; }
       #loginGasP > .login-container > .row .passGS-col {
         margin-top: 45px; }
       #loginGasP > .login-container > .row form {

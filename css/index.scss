@@ -22,16 +22,15 @@ body{
 			.col{
 				width: 100%;
 				text-align: center;
+				&:last-child{
+					margin-top: 35px;
+				}
 			}
 
 			.brandLogin{
 				max-width: 279.61px;
 				max-height: 183.66px;
 				width: 100%;
-			}
-
-			.emailGS-col{
-				margin-top: 32.12px;
 			}
 
 			.passGS-col{
