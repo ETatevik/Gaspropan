@@ -150,6 +150,55 @@ window.onload = function () {
 		}
 		
 	}
+	// lastDaySales2 // for stationBranch
+	{
+		var lastDaySalesArrayValue2 = [];
+		for(var i in LastDaySales_value){
+			var obj = {
+				x: LastDaySales_value[i]["id"],
+				y: LastDaySales_value[i]["value"]
+			};
+			lastDaySalesArrayValue2[i] = obj;
+		}
+
+		try {
+			var chart = new CanvasJS.Chart("LastDaySales2", {
+		        animationEnabled: true,
+		        interactivityEnabled: true,  
+		        axisY: {
+		            suffix: "$",
+		            gridThickness: 1,
+		            tickColor: "#D3D8DD",
+		            gridColor: "#D3D8DD",
+		            gridDashType: "longDash",
+		            lineColor: "transparent",
+		            labelFontFamily: "'Poppins', sans-serif",
+		            labelFontColor: "#4C5862",
+		            labelFontSize: 11
+		        },
+		        axisX: {
+		            interval:1,
+		            gridThickness: 1,
+		            tickColor: "#D3D8DD",
+		            gridColor: "#D3D8DD",
+		            gridDashType: "longDash",
+		            lineColor: "transparent",
+		            labelFontFamily: "'Poppins', sans-serif",
+		            labelFontColor: "#4C5862",
+		            labelFontSize: 11
+		        },
+		        data: [{
+		            type: "splineArea",
+		            lineColor: "#109CF1",
+		            color: "rgba(16, 156, 241, .4)",
+		            dataPoints:lastDaySalesArrayValue2
+		        	}]
+		        });
+		    chart.render();
+		} catch(e) {
+			console.log(e);
+		}
+	}
 
 	// SalesByStations
 	{
