@@ -68,26 +68,6 @@ window.onload = function () {
 	jQuery('.dateNowGS').text(new Date().getFullYear());
 
 
-	// menu dropdown when window small 1200px-------------------------------------------------
-	// if ($(window).width() < 1200) {
-	// 	$('.menu-btns li').not('.menu-btns li.active').slideUp(0);
-	// 	$('.menu-btns li.active').css('display', 'block');
-	// }
-	$('.menu-btns .active').on('click', function(event) {
-		if ($(window).width() < 1200) {
-	        event.preventDefault();
-	        $('.menu-btns li').not(this).slideToggle(200); 
-		}
-    });
-
-    // LogOut-----------------------------------------
-    {
-    	$('#logout').click(function(event) {
-    		location.href = "index.html";
-    	});
-    }
-
-
     // Touch slider Sale diskr----------------------------------
     {
     	jQuery("#content-slider").lightSlider({
@@ -198,58 +178,6 @@ window.onload = function () {
 		} catch(e) {
 			console.log(e);
 		}
-	}
-
-	// SalesByStations
-	{
-		var LastDaySales_valueArray = [];
-		for(var i in LastDaySales_value){
-			var obj = {        
-					type: "column",
-					showInLegend: true, 
-					legendText: LastDaySales_value[i]["country"],
-					legendMarkerType: "circle",
-					dataPoints: [{ x: LastDaySales_value[i]["id"], y: LastDaySales_value[i]["value"] }]
-			};
-			LastDaySales_valueArray[i] = obj;
-		}
-		try {
-			CanvasJS.addColorSet("SalesByStations", colors);
-			var chart2 = new CanvasJS.Chart("SalesByStations", {
-		        animationEnabled: true,
-		        axisY: {
-		            suffix: "$",
-		            gridThickness: 1,
-		            tickColor: "#D3D8DD",
-		            gridColor: "#D3D8DD",
-		            gridDashType: "longDash",
-		            lineColor: "transparent",
-		            labelFontFamily: "'Poppins', sans-serif",
-		            labelFontColor: "#4C5862",
-		            labelFontSize: 11
-		        },
-		        axisX: {
-		            interval:2,
-		            gridThickness: 1,
-		            tickColor: "#D3D8DD",
-		            gridColor: "#D3D8DD",
-		            gridDashType: "longDash",
-		            lineColor: "transparent",
-		            labelFontFamily: "'Poppins', sans-serif",
-		            labelFontColor: "transparent",
-		            labelFontSize: 11
-		        },
-		        legend :{
-		            verticalAlign: "center",
-		            horizontalAlign: "right"
-		        },
-		        data: LastDaySales_valueArray 
-		    });
-		    chart2.render();
-		} catch(e) {
-			console.log(e);
-		}
-			
 	}
 
 	// SalesByStations
