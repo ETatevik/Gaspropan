@@ -1,0 +1,26 @@
+#makredIdAddressAndSession .container {
+  padding: 0 60px; }
+  #makredIdAddressAndSession .container .row {
+    padding-top: 45px; }
+    #makredIdAddressAndSession .container .row .address {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #makredIdAddressAndSession .container .row .address h2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #373737; }
+      #makredIdAddressAndSession .container .row .address > svg {
+        margin-right: 9px; }
