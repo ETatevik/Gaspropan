@@ -80,6 +80,18 @@ window.onload = function () {
              autoWidth: true
          });
     }
+
+    // Close modal
+    {
+    	jQuery('#closeModal').click(function(event) {
+
+			if (!jQuery('#densityInput').val()) {
+				jQuery('#densityInput').next('.invalidInfo').css('display', 'block');
+			}else{
+				jQuery('.modal').fadeOut(500);
+			}
+    	});
+    }
 	// Digrames --------------------------------------------------------
 	// lastDaySales
 	{
