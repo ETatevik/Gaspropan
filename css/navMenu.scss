@@ -121,7 +121,11 @@ nav{
 				justify-content: space-between;
 				.col-lg{
 					width: 50%;
-					min-width: 235px;
+					min-width: 150px;
+				}
+
+				.menu-btns  a.btn{
+					padding:10px 15px;
 				}
 			}
 		}

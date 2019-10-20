@@ -161,6 +161,13 @@ var sessionTabelInfo = [
 
 jQuery(document).ready(function() {
 
+	// hide placeloder calendar in Safari br
+	{
+		if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {  
+			jQuery("#makredIdAddressAndSession .sessionStartEnd label > input").attr('placeholder', '');
+		}
+	}
+
 	// calendar Session
 	jQuery('#startSession').dateTimePicker({
         monthName: ['Հունվ', 'Փետ', 'Մարտ', 'Ապր', 'Մայ', 'Հունի', 'Հուլ', 'Օգոս', 'Սեպ', 'Հոկ', 'Նոյ', 'Դեկ'], 
@@ -175,8 +182,25 @@ jQuery(document).ready(function() {
 
 	// table Info Session
     if(jQuery(window).width() > 1200){
-    	var tabel = "";
-    	tabel = "<table class='table'>\n<tr>";
+    	pcTabelVersion();
+    }else{
+    	smartTabelVersion();
+    }
+
+    jQuery(window).resize(function(event) {
+		if(jQuery(window).width() > 1200){
+	    	pcTabelVersion();
+	    }else{
+    		smartTabelVersion();
+	    }
+    });
+
+});
+
+
+function pcTabelVersion(){
+	var tabel = "";
+    	tabel = "<table class='pctable'>\n<tr>";
     	for(var i in sessionTabelInfo[0]){
     		tabel += "\n\t<th class='th'>"+i+"</th>\n";
     	}
@@ -192,20 +216,18 @@ jQuery(document).ready(function() {
     	tabel += "\n</table>";
     	console.log(tabel)
     	jQuery("#tabelSession").html(tabel);
-    }else{
-    	var tabel = "";
-    	tabel +="This is not the end, debugging soon!!! \n"
+}
 
-    	for(var i in sessionTabelInfo){
-    		tabel += "<table class='table'>\n";
-    		for(var j in sessionTabelInfo[i]){
-    			tabel += "\n\t<tr class='tr'>\t<td class='td'><span class='th'>"+j+"</span>"+sessionTabelInfo[i][j]+"</td>\n\t</tr>";
-    		}
-    		tabel += "\n</table>";
+function smartTabelVersion(){
+	var tabel = "";
 
-    	}
-    	console.log(tabel)
-    	jQuery("#tabelSession").html(tabel);
-    }
+    for(var i in sessionTabelInfo){
+    	tabel += "<table class='smarttable'>\n";
+    	tabel += "\n\t<tr class='tr'>\n\t<td class='td'>\t\t<span class='th'>" + "Համար " + "\t\t</span>"+sessionTabelInfo[i]["Համար"]+ "<span class='th'>"+ "Վաճառքը " + "</span>"+sessionTabelInfo[i]["Վաճառքը (Գինը)"]+"Դ / "+sessionTabelInfo[i]["Վաճառքը (Լիտր)"] + "Լ" + "\t\n</td>\t\n</tr>" ;
+    	tabel += "\n\t<tr class='tr'>\n\t<td class='td'>\t\t<span class='th'>" + "Միացում " + "\t\t</span>"+sessionTabelInfo[i]["Միացման սկիզբը"]+ " - " + sessionTabelInfo[i]["Միացման ավարտը"] + "\t\n</td>\t\n</tr>" ;
+    	tabel += "\n\t<tr class='tr'>\n\t<td class='td'>\t\t<span class='th'>" + "Գրառում " + "\t\t</span>"+sessionTabelInfo[i]["Գրառում"]+ "\t\n</td>\t\n</tr>" ;
+    	tabel += "\n</table>";
+	}
 
-});
+    jQuery("#tabelSession").html(tabel);
+}

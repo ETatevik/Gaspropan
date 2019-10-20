@@ -1,5 +1,18 @@
 jQuery(document).ready(function() {
-	if ($(window).width() < 1200 && $(window).width() > 400) {
+	sliderCountrysmart();
+
+	jQuery(window).resize(function(event) {
+		if (jQuery(window).width() > 1200) {
+			location.reload();
+		}else{
+			sliderCountrysmart();
+		}
+	});
+});
+
+
+function sliderCountrysmart(){
+	if (jQuery(window).width() < 1200 && $(window).width() > 400) {
 		// Touch slider Counrty diskr----------------------------------
 	    {
 	    	jQuery("#content-slider-country").lightSlider({
@@ -11,7 +24,7 @@ jQuery(document).ready(function() {
 	             slideMargin: 29
 	         });
 	    }
-	}else if ($(window).width() < 400){
+	}else if (jQuery(window).width() < 400){
 		// Touch slider Counrty diskr----------------------------------
 	    {
 	    	jQuery("#content-slider-country").lightSlider({
@@ -24,4 +37,4 @@ jQuery(document).ready(function() {
 	         });
 	    }
 	}
-});
+}
