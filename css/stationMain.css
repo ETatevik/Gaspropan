@@ -239,5 +239,9 @@
     padding: 0 14.33px; }
     #infoSession > .container #tabelSession .smarttable .th {
       display: inline-block;
-      margin-left: 0 !important;
+      margin-left: 3px !important;
       margin-right: 5px; } }
+
+@media (max-width: 300px) {
+  #infoSession > .container #tabelSession .smarttable .th {
+    margin-left: 0 !important; } }
