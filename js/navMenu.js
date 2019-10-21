@@ -17,4 +17,22 @@ jQuery(document).ready(function() {
     		location.href = "index.html";
     	});
     }
+
+    // Modal Open and Close
+    {
+    	jQuery('.modal').fadeOut('500');
+
+    	jQuery('#openModal').click(function(event) {
+    		jQuery('#densityInput').next('.invalidInfo').css('display', 'none');
+    		jQuery('.modal').fadeIn('500');
+    	});
+    	jQuery('#closeModal').click(function(event) {
+
+			if (!jQuery('#densityInput').val()) {
+				jQuery('#densityInput').next('.invalidInfo').css('display', 'block');
+			}else{
+				jQuery('.modal').fadeOut(500);
+			}
+    	});
+    }
 });

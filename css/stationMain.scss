@@ -96,13 +96,13 @@
 						font-weight: normal;
 						font-size: 13px;
 						color: #FFFFFF;
-						background: rgba(4, 108, 187, 0.58);
+						background: rgba(4, 108, 187, 0.58) linear-gradient(rgba(4, 108, 187, 0.58));
 						transition: .25s;
 						border-radius: 21px;
 						padding: 6.5px  26px;
 
 						&:hover{
-							background: rgba(4, 108, 187, 1);
+							background: rgba(4, 108, 187, 1) linear-gradient(rgba(4, 108, 187, 1));
 						}
 					}
 				}

@@ -89,14 +89,20 @@
           font-weight: normal;
           font-size: 13px;
           color: #FFFFFF;
-          background: rgba(4, 108, 187, 0.58);
+          background: rgba(4, 108, 187, 0.58) -webkit-gradient(linear, left top, left bottom, from(rgba(4, 108, 187, 0.58)));
+          background: rgba(4, 108, 187, 0.58) -webkit-linear-gradient(rgba(4, 108, 187, 0.58));
+          background: rgba(4, 108, 187, 0.58) -o-linear-gradient(rgba(4, 108, 187, 0.58));
+          background: rgba(4, 108, 187, 0.58) linear-gradient(rgba(4, 108, 187, 0.58));
           -webkit-transition: .25s;
           -o-transition: .25s;
           transition: .25s;
           border-radius: 21px;
           padding: 6.5px  26px; }
           #makredIdAddressAndSession .container > .row .sessionStartEnd .btn-search .btn:hover {
-            background: #046cbb; }
+            background: #046cbb -webkit-gradient(linear, left top, left bottom, from(#046cbb));
+            background: #046cbb -webkit-linear-gradient(#046cbb);
+            background: #046cbb -o-linear-gradient(#046cbb);
+            background: #046cbb linear-gradient(#046cbb); }
 
 .cmp-date-time-picker .cmp-dp-date-wrapper .cmp-dp-date-item-cur, .cmp-date-time-picker .cmp-dp-date-wrapper .cmp-dp-date-item-cur:hover {
   background-color: #046CBB; }
