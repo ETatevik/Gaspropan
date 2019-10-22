@@ -3,7 +3,7 @@
 		padding: 0 60px;
 		& > .row{
 			padding-top: 45px;
-			// justify-content: space-between;
+			justify-content: center; /* delet when use class .sessionStartEnd*/
 
 			.address{
 				display: flex;

@@ -1,0 +1,17 @@
+#makredIdAddressAndSession .container > .row {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important; }
+  #makredIdAddressAndSession .container > .row .address label {
+    font-family: 'Rubik',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #046CBB;
+    margin: 0 10.5px; }
+    #makredIdAddressAndSession .container > .row .address label input {
+      margin-right: 9px; }
+  #makredIdAddressAndSession .container > .row .sessionStartEnd > .row > .sessionStartEnd .col-session h2 {
+    margin-bottom: 0 !important;
+    margin-top: 12px !important; }

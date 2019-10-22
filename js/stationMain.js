@@ -169,16 +169,23 @@ jQuery(document).ready(function() {
 	}
 
 	// calendar Session
-	jQuery('#startSession').dateTimePicker({
-        monthName: ['Հունվ', 'Փետ', 'Մարտ', 'Ապր', 'Մայ', 'Հունի', 'Հուլ', 'Օգոս', 'Սեպ', 'Հոկ', 'Նոյ', 'Դեկ'], 
-        dayName: ['Կրի', 'Երկ', 'Երեք', 'Չոր', 'Հինգ', 'Ուրբ', 'Շաբ'],
-        limitMax: jQuery('#endSession') 
-    });
-	jQuery('#endSession').dateTimePicker({
-        monthName: ['Հունվ', 'Փետ', 'Մարտ', 'Ապր', 'Մայ', 'Հունի', 'Հուլ', 'Օգոս', 'Սեպ', 'Հոկ', 'Նոյ', 'Դեկ'], 
-        dayName: ['Կրի', 'Երկ', 'Երեք', 'Չոր', 'Հինգ', 'Ուրբ', 'Շաբ'],
-        limitMin: $('#startSession') 
-    });
+	{
+		try {
+			jQuery('#startSession').dateTimePicker({
+		        monthName: ['Հունվ', 'Փետ', 'Մարտ', 'Ապր', 'Մայ', 'Հունի', 'Հուլ', 'Օգոս', 'Սեպ', 'Հոկ', 'Նոյ', 'Դեկ'], 
+		        dayName: ['Կրի', 'Երկ', 'Երեք', 'Չոր', 'Հինգ', 'Ուրբ', 'Շաբ'],
+		        limitMax: jQuery('#endSession') 
+		    });
+			jQuery('#endSession').dateTimePicker({
+		        monthName: ['Հունվ', 'Փետ', 'Մարտ', 'Ապր', 'Մայ', 'Հունի', 'Հուլ', 'Օգոս', 'Սեպ', 'Հոկ', 'Նոյ', 'Դեկ'], 
+		        dayName: ['Կրի', 'Երկ', 'Երեք', 'Չոր', 'Հինգ', 'Ուրբ', 'Շաբ'],
+		        limitMin: $('#startSession') 
+		    });
+		} catch(e) {
+			console.log(e);
+		}
+	}
+	
 
 	// table Info Session
     if(jQuery(window).width() > 1200){
@@ -214,7 +221,6 @@ function pcTabelVersion(){
     		tabel += "</tr>\n";
     	}
     	tabel += "\n</table>";
-    	console.log(tabel)
     	jQuery("#tabelSession").html(tabel);
 }
 

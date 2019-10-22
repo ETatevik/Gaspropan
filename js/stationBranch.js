@@ -67,6 +67,30 @@ window.onload = function () {
 	// Now Year in first digrames--------------------------------------------
 	jQuery('.dateNowGS').text(new Date().getFullYear());
 
+	// Modal Open and Close
+    {
+
+    	jQuery('#btn-open-popupS').click(function(event) {
+    		jQuery('#stationInput').next('.invalidInfo').css('display', 'none');
+            jQuery('#stationInput').val('');
+    		jQuery('.modal:last-of-type').fadeIn('500');
+    	});
+    	jQuery('#closeModalStation').click(function(event) {
+
+			if (!jQuery('#stationInput').val()) {
+				jQuery('#stationInput').next('.invalidInfo').css('display', 'block');
+			}else{
+				jQuery('.modal:last-of-type').fadeOut(500);
+			}
+    	});
+        jQuery('.modal-box, .modal').click(function(event) {
+            if ($(event.target).hasClass('modal-box')
+                || $(event.target).hasClass('modal')) {
+                jQuery('.modal').fadeOut(500);
+            }
+        });
+    }
+
 
     // Touch slider Sale diskr----------------------------------
     {

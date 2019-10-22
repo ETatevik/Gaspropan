@@ -24,15 +24,22 @@ jQuery(document).ready(function() {
 
     	jQuery('#openModal').click(function(event) {
     		jQuery('#densityInput').next('.invalidInfo').css('display', 'none');
-    		jQuery('.modal').fadeIn('500');
+            jQuery('#densityInput').val('');
+    		jQuery('.modal:first-child').fadeIn('500');
     	});
     	jQuery('#closeModal').click(function(event) {
 
 			if (!jQuery('#densityInput').val()) {
 				jQuery('#densityInput').next('.invalidInfo').css('display', 'block');
 			}else{
-				jQuery('.modal').fadeOut(500);
+				jQuery('.modal:first-child').fadeOut(500);
 			}
     	});
+        jQuery('.modal-box, .modal').click(function(event) {
+            if ($(event.target).hasClass('modal-box')
+                || $(event.target).hasClass('modal')) {
+                jQuery('.modal').fadeOut(500);
+            }
+        });
     }
 });

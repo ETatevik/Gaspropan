@@ -1,0 +1,28 @@
+#makredIdAddressAndSession{
+	.container>.row{
+		align-items: center !important;
+
+		.address{
+			label{
+				font-family: 'Rubik',sans-serif;;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 19px;
+				color: #046CBB;
+				margin: 0 10.5px;
+				input{
+					margin-right: 9px;
+				}
+			}
+		}
+		.sessionStartEnd > .row > .sessionStartEnd{
+			.col-session{
+				h2{
+					margin-bottom: 0 !important;		
+					margin-top: 12px !important;
+				}
+			}
+		}
+	}
+}

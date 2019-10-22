@@ -5,6 +5,32 @@
 }
 #makredIdCompany .container{
 	margin: 30px auto 25px;
+	/*min-width: 230px;*/
+	width: 100%;
+}
+
+#makredIdCompany .container .row{
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 70%;
+	max-width: 600px;
+	margin: auto; 
+}
+
+#makredIdCompany .container h2{
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: #000000;
+}
+
+#makredIdCompany .container svg{
+	margin-right: 12px;
+}
+
+#makredIdCompany .container .col-sb{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -18,26 +44,44 @@
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	min-width: 230px;
-	width: 100%;
-
 }
-#makredIdCompany .container h2{
-	font-family: 'Roboto', sans-serif;
+
+#makredIdCompany .container  #btn-open-popupS{
+	font-family: 'Rubik',  sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
-	color: #000000;
+	font-size: 16px;
+	color: #FFFFFF;
+	background: rgba(4, 108, 187, 0.58) -webkit-gradient(linear, left top, left bottom, from(rgba(4, 108, 187, 0.58)));
+    background: rgba(4, 108, 187, 0.58) -webkit-linear-gradient(rgba(4, 108, 187, 0.58));
+    background: rgba(4, 108, 187, 0.58) -o-linear-gradient(rgba(4, 108, 187, 0.58));
+    background: rgba(4, 108, 187, 0.58) linear-gradient(rgba(4, 108, 187, 0.58));
+	transition: .25s;
+	border-radius: 21px;
+	padding: 6.5px  26px;
 }
 
-#makredIdCompany .container svg{
-	margin-right: 12px;
+#makredIdCompany .container  #btn-open-popupS:hover{
+	background: #046cbb -webkit-gradient(linear, left top, left bottom, from(#046cbb));
+    background: #046cbb -webkit-linear-gradient(#046cbb);
+    background: #046cbb -o-linear-gradient(#046cbb);
+    background: #046cbb linear-gradient(#046cbb); 
 }
-
 
 @media (max-width: 1200px){
+	#makredIdCompany .container .row{
+		-webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+	}
 	#makredIdCompany .container h2{
 		font-size: 16px;
+	}
+	#makredIdCompany .container  #btn-open-popupS{
+		font-size: 14px;
+		margin-top: 20px;
 	}
 }
 

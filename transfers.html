@@ -7,12 +7,15 @@
 
 	<title>ԳԱԶ ՊՐՈՊԱՆ</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet"  href="css/lightslider.css"/>
+    <link rel="stylesheet" href="css/lightslider.css"/>
     <link rel="stylesheet" href="css/navMenu.css">
-	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/stationMain.css">
+    <link rel="stylesheet" href="css/transfers.css">
 
 <!--
 <pre> 
@@ -71,21 +74,21 @@
 				</div>
 				<div class="col-lg">
 					<ul class="menu-btns">
-						<li class="active">
+						<li>
 							<a href="main.html" class="btn">Գլխավոր
 								<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0.337571 0.504535C0.163522 0.686208 0.0719175 0.934814 0.0719175 1.17386C0.0719175 1.4129 0.163522 1.66151 0.337571 1.84318L7.14382 8.94756C7.31787 9.12923 7.54688 9.22485 7.78506 9.22485C8.02323 9.22485 8.25224 9.12923 8.42629 8.94756L15.2325 1.84318C15.5898 1.47027 15.5898 0.877443 15.2325 0.504535C14.8753 0.131626 14.3073 0.131626 13.9501 0.504535L7.78506 6.93959L1.62004 0.504535C1.26278 0.141188 0.68567 0.141188 0.337571 0.504535Z" fill="#046CBB"/>
 								</svg>
 							</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="transfers.html" class="btn">Փոխանցումներ
 								<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0.337571 0.504535C0.163522 0.686208 0.0719175 0.934814 0.0719175 1.17386C0.0719175 1.4129 0.163522 1.66151 0.337571 1.84318L7.14382 8.94756C7.31787 9.12923 7.54688 9.22485 7.78506 9.22485C8.02323 9.22485 8.25224 9.12923 8.42629 8.94756L15.2325 1.84318C15.5898 1.47027 15.5898 0.877443 15.2325 0.504535C14.8753 0.131626 14.3073 0.131626 13.9501 0.504535L7.78506 6.93959L1.62004 0.504535C1.26278 0.141188 0.68567 0.141188 0.337571 0.504535Z" fill="#046CBB"/>
 								</svg>
 							</a>
 						</li>
-						<li>
+						<li >
 							<a href="station.html" class="btn">Կայաններ
 								<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0.337571 0.504535C0.163522 0.686208 0.0719175 0.934814 0.0719175 1.17386C0.0719175 1.4129 0.163522 1.66151 0.337571 1.84318L7.14382 8.94756C7.31787 9.12923 7.54688 9.22485 7.78506 9.22485C8.02323 9.22485 8.25224 9.12923 8.42629 8.94756L15.2325 1.84318C15.5898 1.47027 15.5898 0.877443 15.2325 0.504535C14.8753 0.131626 14.3073 0.131626 13.9501 0.504535L7.78506 6.93959L1.62004 0.504535C1.26278 0.141188 0.68567 0.141188 0.337571 0.504535Z" fill="#046CBB"/>
@@ -117,107 +120,72 @@
 		</div>
 	</nav>
 
-
-	<!-- Information Section for sale -->
-	<section id="infoSale">
+	<!-- Marked Id Addres And Session -->
+	<section id="makredIdAddressAndSession">
 		<div class="container">
-			<div class="saleSliderMain">
-		        <div class="item">
-		            <ul id="content-slider" class="content-slider">
-		                <li>
-		                    <div class="box-sale">
-		                        <h2>Այսօր վաճառվել է</h2>
-		                        <p>233 000</p>
-		                    </div>
-		                </li>
-		                <li>
-		                    <div class="box-sale">
-		                        <h2>Այսօր վաստակվել է</h2>
-		                        <p>233 000</p>
-		                    </div>
-		                </li>
-		                <li>
-		                    <div class="box-sale">
-		                        <h2>Ամսվա վաճառվածը</h2>
-		                        <p>233 000</p>
-		                    </div>
-		                </li>
-		                <li>
-		                    <div class="box-sale">
-		                        <h2>Ամսվա վաստակվածը</h2>
-		                        <p>233 000</p>
-		                    </div>
-		                </li>
-		                <li>
-		                    <div class="box-sale">
-		                        <h2>Այս հերթափոխում վաճառվեց</h2>
-		                        <p>233 000</p>
-		                    </div>
-		                </li>
-		                <li>
-		                   <div class="box-sale">
-		                        <h2>Այս հերթափոխում վաճառվեց</h2>
-		                        <p>233 000</p>
-		                    </div>
-		                </li>
-		            </ul>
-		        </div>
-		    </div>	
+			<form class="row">
+				<div class="address">
+					<label for="inputTransfer">
+						<input type="radio" id="inputTransfer" name="ipoutPutTransfer">Մուտքագրում
+					</label>
+					<label for="outputTransfer">
+						<input type="radio" id="outputTransfer" name="ipoutPutTransfer">Արտածում
+					</label>	
+				</div>
+				<div class="sessionStartEnd">
+					<div class="row">
+						<div class="col-session">
+							<label for="startSession">
+								<input id="startSession" type="text" placeholder="2019-10-03">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.0747 1.24039C9.76979 0.93544 9.36436 0.767517 8.93315 0.767517C8.50193 0.767517 8.09651 0.93544 7.79156 1.24039L1.89502 7.13684C1.87594 7.15591 1.86107 7.17873 1.85122 7.20383L0.561014 10.501C0.532785 10.5733 0.549952 10.6554 0.604807 10.7103C0.642115 10.7477 0.692088 10.7675 0.742976 10.7675C0.766856 10.7675 0.790965 10.7632 0.814082 10.7541L4.11136 9.46388C4.13646 9.45404 4.1592 9.43916 4.17827 9.42009L4.73072 8.86765C4.80693 8.79143 4.80693 8.66776 4.73072 8.59146C4.65442 8.51517 4.53075 8.51517 4.45446 8.59146L4.04018 9.00581L2.30937 7.27501L6.9978 2.58652L8.7286 4.31732L5.55935 7.48657C5.48305 7.56287 5.48305 7.68654 5.55935 7.76283C5.63556 7.83905 5.75924 7.83905 5.83553 7.76283L10.0747 3.52364C10.3797 3.21869 10.5476 2.81326 10.5476 2.38197C10.5476 1.95076 10.3797 1.54533 10.0747 1.24039ZM2.1062 7.62428L3.69083 9.20891L2.32554 9.74319L1.57191 8.98956L2.1062 7.62428ZM1.41658 9.38667L1.92843 9.89861L1.08744 10.2277L1.41658 9.38667ZM7.27406 2.31033L7.6218 1.96259L9.35261 3.69331L9.00479 4.04106L7.27406 2.31033ZM9.79855 3.24738L9.6288 3.41713L7.89799 1.68633L8.06774 1.51657C8.29891 1.28548 8.60623 1.15814 8.93315 1.15814C9.26007 1.15814 9.56738 1.28548 9.79855 1.51665C10.0297 1.74774 10.157 2.05513 10.157 2.38197C10.157 2.70889 10.0297 3.0162 9.79855 3.24738Z" fill="#424242"/>
+								</svg>
+							</label>
+							<h2>Մեկնարկի Ամսաթիվ</h2>
+						</div>
+						<div class="col-session">
+							<label for="endSession">
+								<input id="endSession" type="text" placeholder="2019-10-03">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.0747 1.24039C9.76979 0.93544 9.36436 0.767517 8.93315 0.767517C8.50193 0.767517 8.09651 0.93544 7.79156 1.24039L1.89502 7.13684C1.87594 7.15591 1.86107 7.17873 1.85122 7.20383L0.561014 10.501C0.532785 10.5733 0.549952 10.6554 0.604807 10.7103C0.642115 10.7477 0.692088 10.7675 0.742976 10.7675C0.766856 10.7675 0.790965 10.7632 0.814082 10.7541L4.11136 9.46388C4.13646 9.45404 4.1592 9.43916 4.17827 9.42009L4.73072 8.86765C4.80693 8.79143 4.80693 8.66776 4.73072 8.59146C4.65442 8.51517 4.53075 8.51517 4.45446 8.59146L4.04018 9.00581L2.30937 7.27501L6.9978 2.58652L8.7286 4.31732L5.55935 7.48657C5.48305 7.56287 5.48305 7.68654 5.55935 7.76283C5.63556 7.83905 5.75924 7.83905 5.83553 7.76283L10.0747 3.52364C10.3797 3.21869 10.5476 2.81326 10.5476 2.38197C10.5476 1.95076 10.3797 1.54533 10.0747 1.24039ZM2.1062 7.62428L3.69083 9.20891L2.32554 9.74319L1.57191 8.98956L2.1062 7.62428ZM1.41658 9.38667L1.92843 9.89861L1.08744 10.2277L1.41658 9.38667ZM7.27406 2.31033L7.6218 1.96259L9.35261 3.69331L9.00479 4.04106L7.27406 2.31033ZM9.79855 3.24738L9.6288 3.41713L7.89799 1.68633L8.06774 1.51657C8.29891 1.28548 8.60623 1.15814 8.93315 1.15814C9.26007 1.15814 9.56738 1.28548 9.79855 1.51665C10.0297 1.74774 10.157 2.05513 10.157 2.38197C10.157 2.70889 10.0297 3.0162 9.79855 3.24738Z" fill="#424242"/>
+								</svg>
+							</label>
+							<h2>Ավարտի Ամսաթիվը</h2>
+						</div>
+					</div>
+					<div class="btn-search">
+						<input type="submit" class="btn" value="Թարմացնել">
+						<input type="button" class="btn" id="btn-new-transfer" value="Նոր">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	
+	<!-- Tabel Info About Session -->
+	<section id="infoSession">
+		<div class="container">
+			<div id="tabelSession"></div>
 		</div>
 	</section>
 
 
-	<!-- Digrames -->
-	<section id="digrames">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="saleTeam">
-						<h3 class="bw-100">Անցյալ օրվա վաճառք</h3>
-						<div class="convas-container dateGS">
-							<div id="LastDaySales"></div>
-							<span class="dateNowGS"></span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="saleTeam">
-						<h3 class="bw-80">Կայարանների վաճառք</h3>
-						<div class="convas-container">
-							<div id="SalesByStations"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<div class="saleTeam">
-						<h3 class="bw-80">Կայարանների վաճառք</h3>
-						<div class="convas-container">
-							<div id="SalesByStations2"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="saleTeam">
-						<h3 class="bw-80">Կայարանների վաճառք</h3>
-						<div class="convas-container">
-							<div id="SalesByStations3"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>	
 	<!-- Optional JavaScript -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/canvasjs.min.js"></script>
 
+
     <!--This for slider, 3.4.1 version not vorking for this, and this not make a mistake-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/lightslider.js"></script> 
-
+	
+	<!-- Calendar -->
+	<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/es5-shim.min.js"></script>
+    <![endif]-->
+    <script src="js/date-time-picker.min.js"></script>
 	<script src="js/navMenu.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/stationMain.js"></script>
 </body>
 </html>

@@ -1,7 +1,11 @@
 #makredIdAddressAndSession .container {
   padding: 0 60px; }
   #makredIdAddressAndSession .container > .row {
-    padding-top: 45px; }
+    padding-top: 45px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* delet when use class .sessionStartEnd*/ }
     #makredIdAddressAndSession .container > .row .address {
       display: -webkit-box;
       display: -ms-flexbox;
