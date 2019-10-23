@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/lightslider.css"/>
     <link rel="stylesheet" href="css/navMenu.css">
-    <link rel="stylesheet" href="css/stationMain.css">
     <link rel="stylesheet" href="css/transfers.css">
 
 <!--
@@ -121,15 +120,17 @@
 	</nav>
 
 	<!-- Marked Id Addres And Session -->
-	<section id="makredIdAddressAndSession">
+	<section id="transfersAndSession">
 		<div class="container">
 			<form class="row">
 				<div class="address">
 					<label for="inputTransfer">
-						<input type="radio" id="inputTransfer" name="ipoutPutTransfer">Մուտքագրում
+						<input type="radio" id="inputTransfer" name="ipoutPutTransfer">
+						<span class="checkmark"></span>Մուտքագրում
 					</label>
 					<label for="outputTransfer">
-						<input type="radio" id="outputTransfer" name="ipoutPutTransfer">Արտածում
+						<input type="radio" id="outputTransfer" name="ipoutPutTransfer">
+						<span class="checkmark"></span>Արտածում
 					</label>	
 				</div>
 				<div class="sessionStartEnd">
@@ -153,8 +154,8 @@
 							<h2>Ավարտի Ամսաթիվը</h2>
 						</div>
 					</div>
-					<div class="btn-search">
-						<input type="submit" class="btn" value="Թարմացնել">
+					<div class="btns">
+						<input type="submit" class="btn btn-search" value="Որոնել">
 						<input type="button" class="btn" id="btn-new-transfer" value="Նոր">
 					</div>
 				</div>
@@ -186,6 +187,6 @@
     <![endif]-->
     <script src="js/date-time-picker.min.js"></script>
 	<script src="js/navMenu.js"></script>
-	<script src="js/stationMain.js"></script>
+	<script src="js/transfers.js"></script>
 </body>
 </html>
